@@ -18,5 +18,6 @@
     </author>
     <icon src="icon.png" />
 <icon src="icons/android/icon.png" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="splash.png" />
 
 </widget>
