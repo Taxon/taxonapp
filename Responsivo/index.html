@@ -6,345 +6,23 @@
 
 <title>Responsivo</title>
 
-<link rel="stylesheet" href="assets/stylesheets/unsemantic-grid-base-no-ie7.css"/>
+<link rel="stylesheet" href="assets/stylesheets/basestyles.css"/>
 <link rel="stylesheet" href="assets/stylesheets/unsemantic-grid-responsive-no-ie7.css"/>
 <link rel="stylesheet" href="assets/stylesheets/action-bars.css"/>
-<link rel="stylesheet" href="assets/stylesheets/base.css"/>
 <link rel="stylesheet" href="assets/stylesheets/icomoon.css"/>
-
-<style>
-/***************************************************
-*--------------------------------------------------- 
-       Reset & Basics (Inspired by E. Meyers)
-* --------------------------------------------------
-***************************************************/  
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline; }
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block; }
-	body {
-		line-height: 1; }
-	ol, ul {
-		list-style: none; }
-	blockquote, q {
-		quotes: none; }
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none; }
-	table {
-		border-collapse: collapse;
-		border-spacing: 0; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  background-color: #111111;
-  padding-bottom: 1px; }
-  
-  
-/***************************************************
-*--------------------------------------------------- 
-                      Basic styles
-* --------------------------------------------------
-***************************************************/  
-
-body {
-position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	height: 100%;
-	font-size: 100%;
-	color: #555;
-	background-color: #f8f8f8; }
-
-a {
-	color: #FFFFFF;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	text-decoration: none; }
-img {
-	width:100%; }
-
-	
-/***************************************************
-*--------------------------------------------------- 
-                      Typography
-* --------------------------------------------------
-***************************************************/  
-
-h1, h2, h3, h4, h5, h6 {
-	font-size: 1em;
-	font-weight: bold; }
-
-h1 {
-	font-size: 4.25em; /* 68px */
-	line-height: 1.1471em; }
-
-h2 {
-	font-size: 2.625em; /* 42px */
-	line-height: 1.2381em;
-	margin: 0 0 0.619em; }
-
-h3 {
-	font-size: 1.625em; /* 26px */
-	line-height: 1em;
-	margin: 0 0 1em; }
-
-small {
-	font-size: 0.625em; /* 10px */
-	margin: 0 0 2.6em; }
-.subheader {
-	color: #777; }
-
-p {
-	margin: 0 0 20px 0; }
-p img { 
-	margin: 0; }
-p.lead { 
-	font-size: 21px; 
-	line-height: 27px; 
-	color: #777;  }
-em { font-style: italic; }
-strong { font-weight: bold; color: #333; }
-small { font-size: 80%; }
-
-/*	Blockquotes  */
-	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
-	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
-	blockquote cite { display: block; font-size: 12px; color: #555; }
-	blockquote cite:before { content: "\2014 \0020"; }
-	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
-
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
-	
-/***************************************************
-*--------------------------------------------------- 
-                      Forms
-* --------------------------------------------------
-***************************************************/
-form {
-  margin: 0 0 1.42857; }
-
-legend {
-  display: block;
-  margin-bottom: 1.42857;
-  padding: 0;
-  width: 100%;
-  border: 1px solid #dddddd;
-  color: #444444;
-  font-size: 21px;
-  line-height: 2.85714; }
-  legend small {
-    color: #f8f8f8;
-    font-size: 1.07143; }
-
-label,
-input,
-button,
-select,
-textarea {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857; }
-
-input,
-button,
-select,
-textarea {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
-
-  .item-input .button .icon {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 0 24px;
-    -moz-box-flex: 0;
-    -moz-flex: 0 0 24px;
-    -ms-flex: 0 0 24px;
-    flex: 0 0 24px;
-    position: static;
-    display: inline-block;
-    height: auto;
-    text-align: center;
-    font-size: 16px; }
-  .item-input.item.active, .ionic-pseudo .item-input.item:active {
-    border-color: #dddddd;
-    background-color: transparent; }
-
-.item-input-wrapper {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -moz-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-flex: 1;
-	-webkit-flex: 1 0;
-	-moz-box-flex: 1;
-	-moz-flex: 1 0;
-	-ms-flex: 1 0;
-	flex: 1 0;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	align-items: center;
-	-webkit-border-radius: px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	padding-right: 6px;
-	padding-left: 6px;
-	background: #eee; }
-
-select,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
-	display: block;
-	height: 38px;
-	color: #111111;
-	font-size: 14px;
-	line-height: 20px;
-}
-
-input,
-textarea {
-  width: 100%; }
-
-textarea {
-  height: auto; }
-
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
-  border: 0; }
-
-
-  
-/***************************************************
-*--------------------------------------------------- 
-                      Buttons
-* --------------------------------------------------
-***************************************************/
-.button {
-  color: #fff;
-  background-color: #333333;
-  padding: 1px 3em 0 3em;
-  min-width: 52px;
-  min-height: 42px;
-  vertical-align: top;
-  margin-top:1em;
-  text-align: center;
-  text-overflow: ellipsis;
-  font-size: 16px;
-  cursor: pointer; }
-  
-.button:hover {
-  color: #444444;
-  text-decoration: none; }
-.button.button-dark {
-  color: white;
-  background-color: #444444;
-  border-color: transparent; }
-.button.button-dark:hover {
-  color: white;
-  background-color: #333;
-  text-decoration: none; }
-  
-  
-  	
-#brand{
-	text-align: center;
-	background-color: #0099cc;
-	display: block;
-	padding: 40px 0 40px;
-	vertical-align: middle;
-}
-
-#brand img{
-	max-width: 315px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-}
-
-nav ul{
-	margin:0 0 5px; 
-	text-align:center; }
-	
-nav ul li{
-	display:inline-block;
-	list-style:none;
-	padding:10px 20px 10px;
-	background-color:#e9e9e9;
-	min-width:100px;
-	text-transform:uppercase;}
-
-#searchform{
-		display:inline-block;
-		width:55% !important; }
-#searchform label{
-	padding:10px;
-	float:none !important; }
-.aligncenter{
-	text-align:center; }
-#main{
-	background-color:#0099cc; 
-	padding-bottom:3em;}
-.padreset{
-	padding:0 !important;
-}
-	
-</style>
 
 </head>
 
 <body>
-	<div id="padreset">
+	<div class="grid-container grid-parent">
     
-    	<div class="grid-100 padreset">
+    	<div class="grid-100 grid-parent">
+        <!--action bar-->
         	<header class="action-bar fixed-top">
       			<a href="index.html" class="app-icon action up" data-transition="pop">
-        			<i class="icon-star-full"></i>
+        			<i class="icon-clipboard"></i>
       			</a>
-     			<h1 class="title">Inicial</h1>
-                
+                <h1 class="title">Inicial</h1>
                 <ul class="actions pull-right">
                   <li>
                     <a href="javascript: void(0);" class="action" title="New Contact" data-ignore="true">
@@ -364,24 +42,26 @@ nav ul li{
 
                 </ul>
    		    </header>
+        <!--action bar end-->
         </div>
         
-        <div class="grid-100 padreset">
+        <div class="grid-100 grid-parent search-form">
+        <!--search form-->
             <span id="brand">
                 <img src="assets/images/banner.png"/>
             </span>
-            <div class="aligncenter" id="main">
-            	<form id="searchform">
-                	<label class="item-input-wrapper">
-                    	<input type="search" placeholder="...">
-                    </label>
-                    <button class="button button-dark">
-                    	buscar
-                    </button>
-                </form>
-            </div>
+            <form>
+                <label class="item-input-wrapper">
+                	<i class="action icon icon-search" ></i>
+                    <input type="search" placeholder="">
+                </label>
+                <button class="button button-dark">
+                    buscar
+                </button>
+            </form>
+        <!--search form-->
         </div>
         
-    </div>
+    </div> <!--container-->
 </body>
 </html>

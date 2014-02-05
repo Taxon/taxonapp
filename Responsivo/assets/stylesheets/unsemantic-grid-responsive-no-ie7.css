@@ -4,10 +4,12 @@
 @media screen and (max-width: 400px) {
   @-ms-viewport {
     width: 320px; }
-  #searchform label {
-	  padding:0;
-}
-
+	
+  .search-form form label{
+	max-width:85%; }
+  #brand img{
+	max-width: 250px; }
+	
 @media all {
   .clear {
     clear: both;
@@ -57,6 +59,7 @@
   }
 }
 @media screen and (max-width: 767px) {
+
   .mobile-grid-100:before,
   .mobile-grid-100:after {
     content: ".";
