@@ -370,9 +370,11 @@ input[type="color"] {
 		max-width:40%;
 		margin:0 auto; }
 	.search-form form label input{
-		display:inline-block; }
+		display: block;
+		position: relative; }
 	.search-form .button{
-		display:block;
+		position: relative;
+		display: block;
 		margin: 5px auto 0; }
 
 
