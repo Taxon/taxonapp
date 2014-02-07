@@ -366,6 +366,7 @@ input[type="color"] {
 	background-color:#0099cc;
 	padding-bottom:4em; }
 	.search-form form label{
+        text-align: center;
 		padding: 5px;
 		max-width:40%;
 		margin:0 auto; }
@@ -373,9 +374,8 @@ input[type="color"] {
 		display: block;
 		position: relative; }
 	.search-form .button{
-		position: relative;
-		display: block;
-		margin: 5px auto 0; }
+		display: inline;
+        position:relative; }
 
 
 	
