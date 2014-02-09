@@ -66,8 +66,8 @@ nav.side-menu{ text-align:center; }
 		color:#FFF;
 		text-decoration:none; }
 		nav.side-menu a.social-mobile{
-			width: 50px;
-			height:50px;
+			max-width: 50px;
+			max-height:50px;
 			border-radius: 50%; }
 
 hr.dark { border: solid #333; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
