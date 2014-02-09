@@ -45,11 +45,13 @@
             <small>beta</small>
 
             <nav class="main-menu">
-            	<ul class="remove-bottom" style="margin-top:10px;">
+            	<ul class="remove-bottom">
                 	<li><a href="">Sobre</a></li>
                 	<li><a href="">Favoritos</a></li>
                     <li><a href="">Recentes</a></li>
-                    <li><a href="">Compartilhar</a></li>
+                    <li class="social"><a href=""><i class="ion-social-twitter"></i></a></li>
+                    <li class="social"><a href=""><i class="ion-social-facebook"></i></a></li>
+                    <li class="social"><a href=""><i class="ion-social-googleplus"></i></a></li>
                 </ul>
             </nav>
             
@@ -90,9 +92,7 @@
           </div>
          </div>
          
-
-      
-	</div><!-- container -->
+	</div> <!-- container -->
     	
         <div class="sb-slidebar sb-right">
             <nav class="side-menu">
@@ -100,23 +100,28 @@
                 	<li><a href="">Sobre</a></li>
                 	<li><a href="">Favoritos</a></li>
                     <li><a href="">Recentes</a></li>
-                    <li><a href="">Compartilhar</a></li>
+                    <hr class="dark"/>
+                    <li><a class="social-mobile" href=""><i class="ion-social-twitter"></i></a></li>
+                    <li><a class="social-mobile" href=""><i class="ion-social-facebook"></i></a></li>
+                    <li><a class="social-mobile" href=""><i class="ion-social-googleplus"></i></a></li>
                 </ul>
             </nav>
-        </div>
+        </div> <!-- slide menu -->
         
-		<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		
-		<!-- Slidebars -->
-		<script src="javascript/slidebars.min.js"></script>
-		<script>
-          (function($) {
-            $(document).ready(function() {
-              $.slidebars();
-            });
-          }) (jQuery);
-        </script>
+	<!-- Javascript
+ 	================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="javascript/slidebars.min.js"></script>
+    
+	<script>
+      (function($) {
+        $(document).ready(function() {
+          $.slidebars();
+		  siteClose: true;
+        });
+      }) (jQuery);
+    </script>
 
 
 <!-- End Document

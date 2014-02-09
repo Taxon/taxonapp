@@ -29,6 +29,7 @@ nav.main-menu{
 	.main-menu ul{
 		text-align: center;
 		padding: 10px;
+		margin-top:10px;
 		display: inline-block; }
 		.main-menu ul li{
 			padding-right: 15px;
@@ -36,6 +37,10 @@ nav.main-menu{
 			display: inline;}
 			.main-menu ul li a{
 				display: inline-block; }
+			.main-menu ul li.social{
+				border:none;
+				font-size:16px;
+				padding-left:10px; }
 	
 nav.mobile-menu{
 	display:none !important;
@@ -60,6 +65,12 @@ nav.side-menu{ text-align:center; }
 		display:block;
 		color:#FFF;
 		text-decoration:none; }
+		nav.side-menu a.social-mobile{
+			width: 50px;
+			height:50px;
+			border-radius: 50%; }
+
+hr.dark { border: solid #333; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
 
 /* #Page Styles
 ================================================== */
