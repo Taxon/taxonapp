@@ -16,12 +16,13 @@
 
 /* #Site Styles
 ================================================== */
+.super{
+	width: 100%; }
+	
 #header{
-	margin-top: 30px; }
-
-.bottom-shadow{
-	box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.1); }
-
+	background-color: #f4f4f4;
+	margin-bottom: 2em; }
+	
 nav.main-menu{
 	box-sizing:border-box;
 	display:inline;
@@ -52,25 +53,28 @@ nav.mobile-menu{
 		margin-right:5px; }
 		.mobile-menu ul li{
 			font-size:32px;
-			color:#999; }
+			color:#2f2f2f; }
 
-nav.side-menu{ text-align:center; }
+nav.side-menu{ text-align: left; }
+	nav.side-menu li{
+		margin-bottom:2px; }
 	nav.side-menu a{
-		box-sizing:border-box;
-		max-width:70%;
-		border-radius: 3px;
-		padding: 1em 0 1em;
+		width: 100%;
+		border-left: solid 5px #099dc8;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-left: 3em;
 		background-color:#333;
-		margin:0 auto;
-		display:block;
-		color:#FFF;
+		display:inline-block;
+		color:#ececec;
 		text-decoration:none; }
-		nav.side-menu a.social-mobile{
-			max-width: 50px;
-			max-height:50px;
-			border-radius: 50%; }
+		nav.side-menu a i{
+			padding-right:1em;
+			font-size:20px; }
+
 
 hr.dark { border: solid #333; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+.bottom-shadow{ box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.2); }
 
 /* #Page Styles
 ================================================== */
@@ -113,6 +117,19 @@ button.main-search-button{
 			
 		nav.mobile-menu{
 			display:inline !important; }
+		
+		#header-tittle{
+			font-size:32px;
+			font-weight:600;
+			line-height:48px; }
+		
+		#header {
+			max-height: 60px; }
+			
+		.mobile-menu ul{
+			margin:10px; }
+			
+
 	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -126,6 +143,17 @@ button.main-search-button{
 			
 		input.main-search{
 			width: 75%; }
+			
+		#header-tittle{
+			font-size:24px;
+			font-weight:600;
+			line-height:32px; }
+		
+		#header {
+			max-height: 50px; }
+			
+		.mobile-menu ul{
+			margin:0; }
 			
 	}
 
