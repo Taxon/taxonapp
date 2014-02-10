@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 
@@ -35,7 +35,6 @@
 </head>
 <body>
 
-
 	<!-- Primary Page Layout
 	================================================== -->
 <div class="super" id="sb-site">
@@ -43,11 +42,15 @@
 	<header id="header">
       <div class="container">
       
-        <h1 class="remove-bottom" id="header-tittle">Taxon</h1><small>beta</small>
+        <h1 class="remove-bottom" id="header-tittle">
+        	<a href="index.html"><i class="ion-ios7-arrow-left displayonly-on-mobile"></i></a>
+        	<i class="ion-information-circled displayonly-on-mobile"></i>
+            Sobre
+            </h1>
 
         <nav class="main-menu">
           <ul class="remove-bottom">
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="index.html">Início</a></li>
             <li><a href="">Favoritos</a></li>
             <li><a href="">Recentes</a></li>
             <li class="social"><a href=""><i class="ion-social-twitter"></i></a></li>
@@ -67,21 +70,35 @@
     
 	<div class="container">
 
-        
-        <div class="sixteen columns add-bottom">
-        	<form class="align-center add-top">
-            	<label>
-                   <input type="search" placeholder="&#xf2f5" value="" class="main-search half-bottom">
-                </label>
-                <button class="main-search-button">pesquisa</button>
-            </form>
-        </div>        
+        <div class="main-content">
+          <div class="one-third column">
+              <h3>O que é?</h3>
+              <p>Taxon é um aplicativo que visa facilitar consultas taxonômicas em dispositivos portáteis, como smartphones, tablets e e-readers. Com ele é possível encontrar informações diversas sobre gêneros, classes ou quaisquer outros niveis taxonômicos com facilidade, sem a necessidade de conexão com a internet e através de uma interface simples e amigável.</p>
+          <hr class="displayonly-on-mobile" />
+          </div>
+          
+          <div class="one-third column">
+              <h3>Funcionalidades</h3>
+              <p>Descubra como explorar ainda mais as funcionalidades do seu aplicativo:</p>
+              <ul class="square">
+                  <li><strong>Favoritos</strong> (<i class="ion-ios7-heart"></i>): marque suas páginas prediletas! </li>
+                  <li><strong>Crie anotações</strong> (<i class="ion-edit"></i>): insira e salve informações próprias diretamente nas páginas onde desejar</li>
+                  <li><strong>Compartilhe</strong> (<i class="ion-android-share"></i>): mostre o que você encontrou nas principais redes sociais.</li>
+              </ul>
+          <hr class="displayonly-on-mobile" />
+          </div>
+          
+          <div class="one-third column">
+              <h3>Colabore!</h3>
+              <p>Se você desejar, é muito simples colaborar com nosso banco de dados. Se você conhece alguma referência valiosa e gostaria de vê-la inclusa neste projeto, basta recomendá-la clicando no ícone "colaborar" (<i class="ion-ios7-lightbulb"></i>). Você também pode ajudar o projeto indicando possíveis erros nas páginas clicando no ícone "reportar erro" (<i class="ion-alert-circled"></i>).</p>
+          </div>
+         </div>
+         
 	</div> <!-- container -->
-    
           <div class="sb-slidebar sb-right">
             <nav class="side-menu">
             	<ul class="remove-bottom">
-                	<li><a href="sobre.html"><i class="ion-information-circled"></i>Sobre</a></li>
+                	<li><a href="index.html"><i class="ion-home"></i>Início</a></li>
                 	<li><a href=""><i class="ion-star"></i>Favoritos</a></li>
                     <li><a href=""><i class="ion-clock"></i>Recentes</a></li>
                     <li><a href=""><i class="ion-social-twitter"></i>Twitter</a></li>
@@ -92,8 +109,7 @@
         </div> <!-- slide menu -->
         
 </div> <!-- super -->
-  
-		
+
 	<!-- Javascript
  	================================================== -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
