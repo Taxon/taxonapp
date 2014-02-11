@@ -20,41 +20,34 @@
 	width: 100%; }
 	
 #header{
-	background-color: #f4f4f4;
-	margin-bottom: 2em; }
-	
-nav.main-menu{
-	box-sizing:border-box;
-	display:inline;
-	float:right; }
-	.main-menu ul{
-		text-align: center;
-		padding: 10px;
-		margin-top:10px;
-		display: inline-block; }
-		.main-menu ul li{
-			padding-right: 15px;
-			border-right: solid 1px #CCCCCC;
-			display: inline;}
-			.main-menu ul li a{
-				display: inline-block; }
-			.main-menu ul li.social{
-				border:none;
-				font-size:16px;
-				padding-left:10px; }
-	
-nav.mobile-menu{
-	display:none !important;
-	box-sizing:border-box;
-	display:inline;
-	float:right; }
-	.mobile-menu ul{
-		margin-top:13px;
-		margin-right:5px; }
-		.mobile-menu ul li{
-			font-size:32px;
-			color:#2f2f2f; }
+	background-color: #2c2c2c;
+	margin-bottom: 2em;
+	text-align:center; }
 
+#header-tittle{
+	font-family: 'Lobster', cursive;
+	font-size: 2.5em;
+	color: #efefef; }
+
+.header-button{ 
+	position: absolute; top: 8px; left:1em; 
+	text-transform: uppercase; 
+	color: #fff;
+	padding:1em 1em 1em;
+	border: none;
+	background: #0099cc; }
+	
+.header-button:hover{ 
+	color: #fff;
+	border: none;
+	background: #0294c5; }
+	
+.header-button:before{
+	padding-right:0.5em;
+	font-size:1.1em;
+	font-family:ionicons;
+	content: "\f20d"; }
+	
 nav.side-menu{ text-align: left; }
 	nav.side-menu li{
 		margin-bottom:2px; }
@@ -71,15 +64,7 @@ nav.side-menu{ text-align: left; }
 		nav.side-menu a i{
 			padding-right:1em;
 			font-size:20px; }
-
-
-hr.dark { border: solid #333; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
-.bottom-shadow{ box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.2); }
-
-/* #Page Styles
-================================================== */
-
-/* forms */
+			
 input.main-search{
 	font-family: ionicons; 
 	width: 60%;
@@ -91,13 +76,17 @@ button.main-search-button{
 	font-size: 14px;
 	font-weight:600; }
 	
-#header-tittle{
-	font-family: 'Anaheim', sans-serif; 
-	display:inline !important; }
-	#header-tittle i{
-		font-size:16px; }
+#content-super{
+	width: 100%;
+	background: #f5f5f5; }
 
+.main-content h3 {
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 1.7em;
+	color: #5d5858; }
 	
+hr.dark { border: solid #333; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+.bottom-shadow{ box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.2); }
 
 	
 /* #Media Queries
