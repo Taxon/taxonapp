@@ -46,8 +46,7 @@
 	top: 0;
 	z-index: 0; /* Slidebars sit behind sb-site. */
 	visibility: hidden; /* Initially hide the Slidebars. */
-	background-color: #222222; /* Default Slidebars background colour, overwrite this with your own css. */
-}
+	background-color: #25394d;} /* Default Slidebars background colour, overwrite this with your own css. */
 
 html.sb-android .sb-slidebar { /* Unfix Slidebars for Android Browser < 3 */
 	height: auto;

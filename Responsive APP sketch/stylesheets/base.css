@@ -265,6 +265,7 @@
 /* #Misc
 ================================================== */
 	.remove-bottom { margin-bottom: 0 !important; }
+	.little-bottom {margin-bottom: 5px !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
 	.pad-top { padding-top: 2em !important; }

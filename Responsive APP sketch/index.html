@@ -43,10 +43,10 @@
         <header id="header" class="bottom-shadow">
           <div class="container">
           
-            <h1 class="remove-bottom" id="header-tittle">Taxon</h1>        
+            <h1 class="remove-bottom" id="header-tittle">Taxon</h1>       
             <menu class="remove-bottom">
-                <ul class="sb-toggle-right">
-                    <li class="button header-button">menu</li>
+                <ul class="sb-toggle-left">
+                    <li class="button header-button bottom-shadow">menu</li>
                 </ul>
             </menu>
             
@@ -86,7 +86,7 @@
                     <figcaption>Closterium intermedium</figcaption>
                 </figure>
             </div>
-            <div class="four columns">
+            <div class="four columns displayonly-on-computer">
                 <figure class="img-showcase">
                     <img src="images/Gleocistys.jpg">
                     <figcaption>Gleocistys gigas</figcaption>
@@ -98,29 +98,18 @@
         <!-- text content --> 
                   
           <div class="container pad-top main-content">
-                <div class="one-third column">
+          
+                <div class="two-thirds column">
                     <h3>O que é?</h3>
                     <article>
                       <p>Taxon é um aplicativo que visa facilitar consultas taxonômicas em dispositivos portáteis, como smartphones, tablets e e-readers. Com ele é possível encontrar informações diversas sobre gêneros, classes ou quaisquer outros niveis taxonômicos com facilidade, sem a necessidade de conexão com a internet e através de uma interface simples e amigável. 
-                      <br class="clear"/>
-                      <span class="see-more"><a href="">continue lendo >></a></span>
                       </p>
                     </article>
                 
                 <hr class="displayonly-on-mobile" />
                 </div>
                 
-                <div class="one-third column">
-                    <h3>Descubra mais</h3>
-                    <article>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt fringilla malesuada. Nulla placerat odio semper est vulputate, vitae commodo ligula hendrerit. Mauris enim sem, sollicitudin a cursus ut, porttitor sed dolor. Nunc quis tortor porta, commodo elit id, gravida metus.... 
-                      <br class="clear"/>
-                      <span class="see-more"><a href="">continue lendo >></a></span>
-                      </p>
-                    </article>
-                    
-                <hr class="displayonly-on-mobile" />
-                </div>
+
                 
                 <div class="one-third column">
                     <h3>Colabore!</h3>
@@ -136,19 +125,48 @@
           <div class="super" id="footer">
           	<div class="container">
             
-            	<div class="one-third column">
-                	<ul class="footer-content">
-                    	<li class="footer-tittle">Supergrupos</li>
+              <div class="one-third column">
+                    <ul class="footer-content">
+                        <li class="footer-tittle">Taxon em números</li>
+                        <ul class="footer-statistics">
+                            <li><i class="ion-document"></i>527 páginas</li>
+                            <li><i class="ion-camera"></i>720 imagens</li>
+                            <li><i class="ion-compose"></i>512 espécies</li>
+                            <li><i class="ion-social-youtube"></i>123 vídeos</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <div class="one-third column">
+                    <ul class="footer-content">
+                        <li class="footer-tittle">Supergrupos</li>
                         <ul>
                             <li class="footer-item" id="archaeplastida">Archaeplastida</li>
                             <li class="footer-item" id="amoebozoa">Amoebozoa</li>
                             <li class="footer-item" id="excavata">Excavata</li>
                             <li class="footer-item" id="sar">SAR</li>
                             <li class="footer-item" id="opisthokonta">Opisthokonta</li>
-                            <li class="footer-item" id="incertae-sedis">Insertae sedis</li>
-                    	</ul>
+                            <li class="footer-item" id="insertaesedis">Insertae sedis</li>
+                        </ul>
                     </ul>
                 </div>
+                
+                <div class="one-third column tell-me-more">
+                    <ul class="footer-content">
+                        <li class="footer-tittle">Conte-me mais</li>
+                    <p class="little-bottom"><a href="">O que é biodiversidade?</a></p>
+                    <p class="little-bottom"><a href="">O que é uma classificação biológica?</a></p>
+                    <p class="little-bottom"><a href="">O que são os domínios da vida?</a></p>
+                    <p class="little-bottom"><a href="">O que é um supergrupo?</a></p>
+                    <p class="little-bottom"><a href="">O que é uma espécie?</a></p>
+                    <p class="little-bottom"><a href="">Como as espécies são batizadas?</a></p>
+                    <p class="little-bottom"><a href="">Como posso contribuir com o projeto?</a></p>
+                        </ul>
+                    </ul>
+                </div>
+              
+       
+                	
                 
             </div> <!--container-->
           </div> <!--super footer-->
@@ -158,15 +176,15 @@
         
         
         <!-- slide menu -->
-        <div class="sb-slidebar sb-right">
+        <div class="sb-slidebar sb-left">
           <nav class="side-menu">
               <ul class="remove-bottom">
-                  <li><a href="sobre.html"><i class="ion-information-circled"></i>Sobre</a></li>
-                  <li><a href=""><i class="ion-star"></i>Favoritos</a></li>
-                  <li><a href=""><i class="ion-clock"></i>Recentes</a></li>
-                  <li><a href=""><i class="ion-social-twitter"></i>Twitter</a></li>
-                  <li><a href=""><i class="ion-social-facebook"></i>Facebook</a></li>
-                  <li><a href=""><i class="ion-social-googleplus"></i>Google +</a></li>
+                  <a href="sobre.html"><li><i class="ion-information-circled side-icon" id="information-icon"></i>Sobre</li></a>
+                  <a href=""><li><i class="ion-star side-icon" id="favorites-icon"></i>Favoritos</li></a>
+                  <a href=""><li><i class="ion-clock side-icon" id="recents-icon"></i>Recentes</li></a>
+                  <a href=""><li><i class="ion-social-twitter side-icon" id="twitter-icon"></i>Twitter</li></a>
+                  <a href=""><li><i class="ion-social-facebook side-icon" id="facebook-icon"></i>Facebook</li></a>
+                  <a href=""><li><i class="ion-social-googleplus side-icon" id="googleplus-icon"></i>Google +</li></a>
               </ul>
           </nav>
       </div> 
