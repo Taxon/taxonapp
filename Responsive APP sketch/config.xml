@@ -16,11 +16,11 @@
         Eric Miguel Ribeiro
       </author>
 
-      <icon src="res/icon.png" />
-      <gap:splash src="res/splash(ldpi).png" gap:platform="android" gap:density="ldpi" />
-      <gap:splash src="res/splash(mdpi).png" gap:platform="android" gap:density="mdpi" />
-      <gap:splash src="res/splash(hdpi).png" gap:platform="android" gap:density="hdpi" />
-      <gap:splash src="res/splash(xdpi).png" gap:platform="android" gap:density="xhdpi" />
+      <icon src="icon.png" />
+      <gap:splash src="splash(ldpi).png" gap:platform="android" gap:density="ldpi" />
+      <gap:splash src="splash(mdpi).png" gap:platform="android" gap:density="mdpi" />
+      <gap:splash src="splash(hdpi).png" gap:platform="android" gap:density="hdpi" />
+      <gap:splash src="splash(xdpi).png" gap:platform="android" gap:density="xhdpi" />
 
       <preference name="phonegap-version" value="3.1.0" />
 
